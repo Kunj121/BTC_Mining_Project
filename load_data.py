@@ -23,17 +23,12 @@ def NSP_NW_rt_data():
 
 import requests
 def get_btc_price():
-    # url = "https://api.coingecko.com/api/v3/simple/price"
-    # params = {
-    #     'ids': 'bitcoin',
-    #     'vs_currencies': 'usd'
-    # }
-    # response = requests.get(url, params=params)
-    # print(response.json())
-    # data = response.json()
-    # return data['bitcoin']['usd']
-    btc_price = 105_000
-    return btc_price
+
+    url = 'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD'
+    response = requests.get(url)
+    data = response.json()
+
+    return data['USD']
 
 # Example usage
 # btc_price = get_btc_price()
@@ -50,7 +45,7 @@ def btc_data(time = 'daily'):
     # x['time_close'] = pd.to_datetime(x['time_close'])
     x = x.iloc[1:]
     x.set_index('time_end', inplace=True)
-    x = x[['price_close', 'returns', 'normalized_ret', 'volume_traded']]
+
 
     if time == 'daily':
         x = x.resample('D').last()
