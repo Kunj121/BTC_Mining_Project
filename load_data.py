@@ -3,6 +3,15 @@ import numpy as np
 import warnings
 warnings.filterwarnings('ignore')
 
+
+def ODELL_da_data():
+    da = pd.read_parquet('data/NSP_ODELLwnd.parquet')
+    da['interval_start_local'] = pd.to_datetime(da['interval_start_local'])
+    da['interval_end_local'] = pd.to_datetime(da['interval_end_local'])
+    da['interval_start_utc'] = pd.to_datetime(da['interval_start_utc'])
+    da.sort_values('interval_start_local', inplace=True)
+    return da
+
 def NSP_NW_da_data():
     da = pd.read_parquet('data/DA_MISO_NSP_NWELOAD.parquet')
     da['interval_start_local'] = pd.to_datetime(da['interval_start_local'])
