@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+
+forecasting_energy.ipynb
+forecating_btc.ipynb
+final_sim.ipynb
+test.ipynb
+processing_module.py
+sim.ipynb
+final_sim.ipynb
+
