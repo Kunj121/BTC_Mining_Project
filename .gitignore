@@ -1,3 +1,6 @@
+__pycache__/
+*.pyc
+
 forecasting_energy.ipynb
 forecating_btc.ipynb
 final_sim.ipynb

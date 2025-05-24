@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/btc_data_google_colab.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/btc_hourly_sim_45vol_20drift.csv">
           <value>
             <Attribute>
