@@ -2,7 +2,7 @@
 
 ## 🏗️ Overview
 This project models and optimizes a Bitcoin (BTC) mining data center's operations using historical BTC prices and MISO electricity market data. The objective is to recommend an operating strategy that maximizes annual profit while accounting for power market volatility, rig efficiency, and financial risk.
-
+To run the project, please clone the repo, and run BTC_Mining_Simulation.ipynb.
 ---
 
 ## 📍 Project Scope
