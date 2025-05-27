@@ -24,6 +24,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/data/3a88b913-6fd8-4f17-8985-3673f88ca9bb.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/808c7397-e8a6-49ef-a5cd-5bdfbf3c99db.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/data/btc_hourly.csv">
           <value>
             <Attribute>
